@@ -1,0 +1,16 @@
+.background
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('/assets/Images/FirstFive.png');
+    background-size: cover;
+}
+
+
+.embed-responsive-item {
+    width: 50vw;
+    height: 60vh;
+}
+
+.game-description 
+{
+    font-size: 30px;
+}

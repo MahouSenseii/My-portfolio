@@ -1,0 +1,31 @@
+.banner-image
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('/assets/Images/Controller.jpg');
+    background-size: cover;
+}
+
+.glowing-text {
+    text-transform: uppercase;
+    color: #FFD700;
+    animation: glowing 2s infinite;
+}
+
+.text-1 {
+    font-size: clamp(.98rem, 8vw - 2rem, 40px);
+}
+
+.text-2 {
+    font-size: clamp(2.5rem, 8vw - 2rem, 100px);
+}
+
+.text-3 {
+    font-size: clamp(.89rem, 8vw - 2rem, 35px);
+}
+
+
+@keyframes glowing {
+    0% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700; }
+    50% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700; }
+    100% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700; }
+  }
+  

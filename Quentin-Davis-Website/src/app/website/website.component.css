@@ -1,0 +1,16 @@
+.background
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('/assets/Images/Website.png');
+    background-size: cover;
+}
+
+
+.img-responsive-item {
+    width: 65vw;
+    height: 60vh;
+}
+
+.game-description 
+{
+    font-size: 30px;
+}

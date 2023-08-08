@@ -1,0 +1,60 @@
+.banner-image
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('/assets/Images/coding3.jpg');
+    background-size: cover;
+}
+
+.content1
+{
+    color: #ffffff;
+    font-size:  20px;
+}
+.content1 h5
+{
+  margin-top: 60px;
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+
+h5 {
+    color: darkgoldenrod;
+    text-align: center;
+    text-decoration: underline;
+
+  }
+  
+  .list-group-item {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+  }
+  
+  .container.my-5 {
+    color: white;
+  }
+  
+
+  .container.my-5 h5 {
+    color: darkgoldenrod;
+    text-align: center;
+    text-decoration: underline;
+
+  }
+  
+  .list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none; /* This removes the border */
+}
+
+  
+  h3 {
+    text-align: center;
+    color: white;
+}
+
+.skills-header {
+  text-align: center;
+  color: darkgoldenrod;
+  text-decoration: underline;
+}

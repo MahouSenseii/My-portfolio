@@ -1,0 +1,39 @@
+<!-- Banner Image -->
+<div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+              <div class="content1 text-center">
+                  <h5 data-aos="fade-down">About Me</h5>
+                  <p data-aos="fade-right">I am a programmer with over 4 years of experience and continuously growing! I have a game design mindset and a passion for creating and playing games.
+                      I possess a great understanding of object-oriented programming. I am eager to collaborate with a studio, where I can showcase my excellent communication,
+                      technical and problem-solving skills. As I am sure my experience in prototyping, debugging, iterative design, attention to detail, and dedication can help
+                      elevate any project! As a designer and programmer by heart, I intuitively know how to improve on weaker aspects of game design while reviewing
+                      and playing games.</p>
+              </div>
+          </div>
+          <div class="container my-5">
+            <div class="row justify-content-center">
+              <div class="col-sm-4">
+                <h5>Unreal</h5>
+                <ul class="list-group">
+                  <li class="list-group-item" *ngFor="let skill of unrealSkills">{{ skill }}</li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <h5>Applications</h5>
+                <ul class="list-group">
+                  <li class="list-group-item" *ngFor="let app of applications">{{ app }}</li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <h5>Programming</h5>
+                <ul class="list-group">
+                  <li class="list-group-item" *ngFor="let app of programming ">{{ app }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>              
+      </div>
+  </div>
+</div>
