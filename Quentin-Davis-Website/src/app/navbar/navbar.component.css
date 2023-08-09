@@ -15,6 +15,7 @@
 .navbar-toggle-icon
 {
     display: inline-flex;
+
 }
 
 .nav-item {
@@ -32,4 +33,21 @@
 .active-link {
     color: darkgoldenrod;
     text-shadow: 0 0 10px darkgoldenrod, 0 0 20px darkgoldenrod, 0 0 30px darkgoldenrod, 0 0 40px darkgoldenrod;
+}
+
+.navbar-toggler 
+{
+position: fixed;
+ right:  12px;
+
+}
+.navbar-collapse.show {
+    
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        height: 85px;
+    }
 }

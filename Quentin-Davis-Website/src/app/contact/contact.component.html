@@ -4,7 +4,7 @@
         <h5 class="header text-center mb-4">LET'S CREATE SOMETHING TOGETHER!</h5>
       </div>
       <div class="form-section align-items-center justify-content-center">
-        <form class="comment-form" id="Contact" (ngSubmit)="onFormSubmit()" #contactForm="ngForm" method="post">
+        <form class="comment-form" id="Contact" #contactForm="ngForm" method="post">
           <div class="row">
             <div class="col-md-6">
               <input type="text" class="form-control custom-input mb-4" name="name" placeholder="Name" required [(ngModel)]="formData.name">

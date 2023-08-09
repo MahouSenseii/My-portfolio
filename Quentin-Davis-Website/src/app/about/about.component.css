@@ -2,6 +2,7 @@
 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('/assets/Images/coding3.jpg');
     background-size: cover;
+    height: 100vh;
 }
 
 .content1
@@ -57,4 +58,13 @@ h5 {
   text-align: center;
   color: darkgoldenrod;
   text-decoration: underline;
+}
+@media (max-width: 576px) { /* Adjust for mobile screens */
+  .banner-image {
+      height: 250vh;  /* Adjust this value as per your requirement */
+  }
+
+  .content1 p {
+      font-size:  15px;
+  }
 }

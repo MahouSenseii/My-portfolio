@@ -7,9 +7,18 @@
   
   .pdf-container {
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Use a percentage width for responsiveness. Adjust this value as needed. */
+    height: 80vh; /* Takes up 80% of the screen height. Adjust this value as needed. */
+    overflow: auto;
   }
+
   
-  iframe {
+  .pdf-viewer {
+    width: 50%; /* Makes the PDF viewer fill its container's width */
+    height: 90%; /* Makes the PDF viewer fill its container's height */
+    object-fit: contain; /* Scales content to fit within dimensions, preserving aspect ratio */
     border: none;
-  }
-  
+}

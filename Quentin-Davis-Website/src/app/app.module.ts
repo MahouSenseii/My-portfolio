@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
 import { ProjecthunterComponent } from './projecthunter/projecthunter.component';
@@ -33,7 +33,8 @@ import { WebsiteComponent } from './website/website.component'; // <-- And this
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule // <-- make sure this is here
+    AppRoutingModule, // <-- make sure this is here
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

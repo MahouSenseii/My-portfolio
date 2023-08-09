@@ -1,26 +1,30 @@
 import { Component } from '@angular/core';
-import { ContactFormService } from '../services/contact-form.service';
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  formData: any = {};
+  formData: any = {
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  };
 
-  constructor(private contactFormService: ContactFormService) {}
+  constructor(private http: HttpClient) { }
 
-  onFormSubmit() {
-    this.contactFormService.submitForm(this.formData).subscribe(
-      (response) => {
-        console.log(response);
-        // Handle success message or other actions on successful form submission
-      },
-      (error) => {
-        console.error(error);
-        // Handle error message or other actions on form submission failure
-      }
+  onSubmit() {
+    this.sendMail(this.formData);
+  }
+
+  sendMail(data: any) {
+    this.http.post('http://localhost:3000/send', data).subscribe(
+      (response) => console.log(response),
+      (error) => console.log(error)
     );
   }
+
 }

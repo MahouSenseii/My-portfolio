@@ -42,8 +42,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.carousel-caption{
+    background-size: cover;
+    background-color: #000;
+    font-size: calc(15px + 3.5vw); 
+}
 .carousel-caption h5{
-    font-size: 85px;
+    font-size: calc(20px + 3.5vw);
     text-transform: capitalize;
     letter-spacing: 2px;
     margin-top: 25px;
@@ -52,8 +58,9 @@
 .carousel-caption p{
     width: 70%;
     margin: auto;
-    font-size:  18px;
+    font-size: clamp(.5rem, 8vw - 2rem, 27px);
     line-height: 1.9;
+    
 }
 .carousel-caption a{
     text-transform: uppercase;
@@ -114,3 +121,11 @@
 {
     text-decoration: underline;
 }
+
+.carousel-caption{
+    background-size: cover;
+    background-color: #000000ec;
+    font-size: clamp(.5rem, 8vw - 2rem, 27px);
+
+}
+

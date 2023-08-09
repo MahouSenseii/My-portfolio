@@ -1,10 +1,12 @@
 <div class="resume-container d-flex flex-column justify-content-center align-items-center vh-100">
-    <div class="pdf-container">
-      <iframe src="http://quentindportfolio.com/ServerSide/resume.pdf" width="80%" height="80%">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://quentindportfolio.com/ServerSide/resume.pdf">Download PDF</a>
-      </iframe>
-    </div>
-    <!-- Download button -->
-    <button class="btn btn-primary mt-3" (click)="downloadResume()">Download Resume</button>
+  <div class="pdf-container">
+    <pdf-viewer class="pdf-viewer" 
+                [src]="pdfSrc" 
+                [render-text]="true" 
+                [original-size]="false" 
+                [zoom]="1.0" 
+                ></pdf-viewer>
   </div>
-  
+  <!-- Download button -->
+  <button class="btn btn-primary mt-3" (click)="downloadPDF()">Download Resume</button>
+</div>
