@@ -43,13 +43,16 @@
     background-size: cover;
 }
 
+.carousel-item{
+    height: 155vh;
+}
 .carousel-caption{
     background-size: cover;
-    background-color: #000;
-    font-size: calc(15px + 3.5vw); 
+    background-color: #00000046;
+    font-size: calc(15px + .5vw); 
 }
 .carousel-caption h5{
-    font-size: calc(20px + 3.5vw);
+    font-size: calc(20px + 2.5vw);
     text-transform: capitalize;
     letter-spacing: 2px;
     margin-top: 25px;
@@ -58,7 +61,7 @@
 .carousel-caption p{
     width: 70%;
     margin: auto;
-    font-size: clamp(.5rem, 8vw - 2rem, 27px);
+    font-size: clamp(.5rem, 8vw - 2rem, 20px);
     line-height: 1.9;
     
 }
@@ -101,22 +104,6 @@
     opacity: 1 !important;
 }
 
-.navbar-toggle{
-    padding: 1px 5px;
-    font-size: 18px;
-    line-height: 0.3;
-    background: #000;
-}
-
-@media only screen and (min-width: 768px) and (max-width:991px) {
-    .navbar-nav{
-        text-align: center;
-    }
-    .navbar-collapse{
-        background: #fff;
-    }
-}
-
 .text-warning
 {
     text-decoration: underline;
@@ -124,8 +111,7 @@
 
 .carousel-caption{
     background-size: cover;
-    background-color: #000000ec;
-    font-size: clamp(.5rem, 8vw - 2rem, 27px);
+    font-size: clamp(.5rem, 6vw - 2rem, 24px);
 
 }
 

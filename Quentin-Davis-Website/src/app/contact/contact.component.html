@@ -1,38 +1,37 @@
 <section class="contact-box d-flex align-items-center min-vh-100">
-    <div class="container">
-      <div class="header-section">
-        <h5 class="header text-center mb-4">LET'S CREATE SOMETHING TOGETHER!</h5>
-      </div>
-      <div class="form-section align-items-center justify-content-center">
-        <form class="comment-form" id="Contact" #contactForm="ngForm" method="post">
-          <div class="row">
-            <div class="col-md-6">
-              <input type="text" class="form-control custom-input mb-4" name="name" placeholder="Name" required [(ngModel)]="formData.name">
-            </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control custom-input mb-4" name="email" placeholder="Email Address" required [(ngModel)]="formData.email">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <input type="text" class="form-control custom-input mb-4" name="phone" placeholder="Phone Number" [(ngModel)]="formData.phone">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control custom-input mb-4" name="subject" placeholder="Subject" required [(ngModel)]="formData.subject">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <textarea class="form-control custom-input mb-4" placeholder="Send me a message" name="message" required [(ngModel)]="formData.message"></textarea>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-              <button type="submit" class="submit-btn btn btn-primary">Submit</button>
-            </div>
-          </div>
-        </form>
-      </div>
+  <div class="container">
+    <div class="header-section">
+      <h5 class="header text-center mb-4">LET'S CREATE SOMETHING TOGETHER!</h5>
     </div>
-  </section>
-  
+    <div class="form-section align-items-center justify-content-center">
+      <form class="comment-form" id="Contact" #contactForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control custom-input mb-4" name="name" placeholder="Name" required [(ngModel)]="formData.name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control custom-input mb-4" name="email" placeholder="Email Address" required [(ngModel)]="formData.email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control custom-input mb-4" name="phone" placeholder="Phone Number" [(ngModel)]="formData.phone">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control custom-input mb-4" name="subject" placeholder="Subject" required [(ngModel)]="formData.subject">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <textarea class="form-control custom-input mb-4" placeholder="Send me a message" name="message" required [(ngModel)]="formData.message"></textarea>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <button type="submit" class="submit-btn btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

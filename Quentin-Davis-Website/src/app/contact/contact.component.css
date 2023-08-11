@@ -3,6 +3,9 @@
     background-image: linear-gradient(rgba(56, 67, 81, 0.7),rgba(4,9,30,0.7)), url(/assets/Images/Space.jpg);
     background-size: cover;
 }
+.carouselExampleCaptions{
+  height: 200vh;
+}
 
 .contact-box h5{
     font-size: clamp(.98rem, 8vw - 2rem, 60px);;

@@ -14,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
 import { ProjecthunterComponent } from './projecthunter/projecthunter.component';
 import { FirstfiveComponent } from './firstfive/firstfive.component';
-import { WebsiteComponent } from './website/website.component'; // <-- And this
+import { WebsiteComponent } from './website/website.component'; 
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { WebsiteComponent } from './website/website.component'; // <-- And this
     BrowserModule,
     FormsModule,
     AppRoutingModule, // <-- make sure this is here
-    PdfViewerModule
+    PdfViewerModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
