@@ -1,14 +1,15 @@
-.navbar
-{
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 50px;
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    height: 70px;
+    transition: background 0.3s, height 0.3s;
 }
 
 .navbar-brand
 {
     font-size: 40px;
     text-decoration: underline;
-    font-family: Times New Roman,Times,serif;
+    font-family: 'Playfair Display', serif;
     color: darkgoldenrod;
 }
 
@@ -42,8 +43,12 @@ position: fixed;
 
 }
 .navbar-collapse.show {
-    
     background-color: black;
+}
+
+.navbar.bg-black {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    height: 60px;
 }
 
 @media screen and (max-width: 768px) {
