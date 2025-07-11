@@ -8,7 +8,7 @@
 }
 
 .contact-box h5{
-    font-size: clamp(.98rem, 8vw - 2rem, 60px);;
+  font-size: clamp(.98rem, 8vw - 2rem, 60px);
     color: #ffffff;
     top: 0;
     font-family: 'Playfair Display', serif;
@@ -49,7 +49,7 @@
   }
 
   .comment-form ::-webkit-input-placeholder{
-    font-size: clamp(.98rem, 8vw - 2rem, 20px);;
+  font-size: clamp(.98rem, 8vw - 2rem, 20px);
     color: #ffffff;
 }
   /* Custom CSS for header and form sections */

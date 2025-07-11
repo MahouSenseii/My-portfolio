@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Environment Variables
+
+Create a `.env` file in the `src/app` folder with the following keys:
+
+```dotenv
+EMAIL_USER=your_smtp_username
+EMAIL_PASS=your_smtp_password
+```
+
+These credentials are loaded by `server.js` to send contact form emails.
