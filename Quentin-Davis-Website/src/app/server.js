@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+require('dotenv').config();
+// Email credentials should be provided via environment variables
 
 const app = express();
 const port = 3000;
@@ -18,8 +20,8 @@ app.post('/send', async (req, res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'postmaster@quentindportfolio.com', // Your email
-            pass: 'ACEace12#'           // Your password
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 
